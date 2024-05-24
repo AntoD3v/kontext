@@ -9,7 +9,7 @@ version = "1.0"
 plugins {
 
     kotlin("jvm")
-
+    id("maven-publish")
 }
 
 dependencies {
