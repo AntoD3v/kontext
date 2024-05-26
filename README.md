@@ -27,8 +27,8 @@ repositories {
     maven { url 'https://jitpack.io' }
 }
 
-dependencies {
-    implementation 'com.github.AntoD3v:kontext:1.0'
+dependencies 
+    implementation("com.github.AntoD3v:kontext:1.0.0")
 }
 ```
 
