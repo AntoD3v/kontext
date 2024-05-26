@@ -4,11 +4,11 @@
  */
 
 group = "dev.kontext"
-version = "1.0"
+version = "1.0.0"
 
 plugins {
 
-    kotlin("jvm")
+    id("org.jetbrains.kotlin.jvm") version("2.0.0")
     id("maven-publish")
 }
 
