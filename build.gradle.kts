@@ -35,3 +35,20 @@ repositories {
 kotlin {
     jvmToolchain(17)
 }
+
+publishing {
+
+    publications {
+
+        publications {
+            register(name, MavenPublication::class) {
+                from(components["java"])
+                groupId = project.group.toString()
+                version = project.version.toString()
+                artifactId = name
+            }
+        }
+
+    }
+
+}
