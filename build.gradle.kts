@@ -8,14 +8,17 @@ version = "1.0.0"
 
 plugins {
 
-    id("org.jetbrains.kotlin.jvm") version("2.0.0")
+    kotlin("jvm") version "2.0.0"
+
     id("maven-publish")
+
 }
 
 dependencies {
 
-    api(kotlin("stdlib-jdk8"))
-    api("org.jetbrains.kotlin:kotlin-reflect")
+    // Kotlin <3
+    kotlin("jvm")
+    kotlin("reflect")
 
     testImplementation(kotlin("test"))
 
